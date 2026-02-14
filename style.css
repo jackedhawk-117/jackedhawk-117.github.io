@@ -1,73 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Janish Saji | Cybersecurity</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-    <h1>Janish Saji</h1>
-    <p>Cybersecurity Enthusiast | Secure Systems Developer</p>
-    <a href="https://github.com/jackedhawk-117" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/janish-saji-546180258" target="_blank">LinkedIn</a>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>
-        Computer Science Engineering student specializing in cybersecurity,
-        secure backend systems, and CTF competitions.
-    </p>
-</section>
-
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>Phishing Detector</strong> – ML-based phishing detection API.</li>
-        <li><strong>Farkle</strong> – Multiplayer Flask game.</li>
-        <li><strong>GoodUSB</strong> – USB security research project.</li>
-        <li><strong>GestureSync</strong> – ML gesture recognition system.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>Email: janishsaji5@gmail.com</p>
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
-.hero {
-    text-align: center;
-    padding: 100px 20px;
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
 }
 
-.hero h1 {
+header {
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 1px solid #30363d;
+}
+
+h1 {
     font-size: 3rem;
     color: #58a6ff;
 }
 
-.hero h2 {
-    font-size: 1.5rem;
+section {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+a {
     color: #ff5555;
-    min-height: 40px;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-.buttons a {
-    display: inline-block;
-    margin: 15px;
-    padding: 10px 20px;
-    border: 1px solid #30363d;
-    border-radius: 6px;
-    transition: 0.3s;
+a:hover {
+    text-decoration: underline;
 }
 
-.buttons a:hover {
-    background: #21262d;
-}
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -79,10 +44,3 @@
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #30363d;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #58a6ff;
-}
