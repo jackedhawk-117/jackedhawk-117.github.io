@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Janish Saji | Cybersecurity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Janish Saji</h1>
+    <p>Cybersecurity Enthusiast | Secure Systems Developer</p>
+    <a href="https://github.com/jackedhawk-117" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/janish-saji-546180258" target="_blank">LinkedIn</a>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        Computer Science Engineering student specializing in cybersecurity,
+        secure backend systems, and CTF competitions.
+    </p>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>Phishing Detector</strong> – ML-based phishing detection API.</li>
+        <li><strong>Farkle</strong> – Multiplayer Flask game.</li>
+        <li><strong>GoodUSB</strong> – USB security research project.</li>
+        <li><strong>GestureSync</strong> – ML gesture recognition system.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: janishsaji5@gmail.com</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
