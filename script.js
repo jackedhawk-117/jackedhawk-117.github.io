@@ -1,13 +1,33 @@
-const text = "Building Secure Systems...";
-let i = 0;
+const roles = [
+    "Cybersecurity Enthusiast",
+    "CTF Competitor",
+    "Secure Backend Developer",
+    "Offensive Security Learner"
+];
 
-function type() {
-    if (i < text.length) {
-        document.querySelector("header p").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(type, 50);
+let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
+
+function typeEffect() {
+    current = roles[i];
+    if (!isDeleting) {
+        document.getElementById("typing").textContent = current.substring(0, j++);
+        if (j > current.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 1000);
+            return;
+        }
+    } else {
+        document.getElementById("typing").textContent = current.substring(0, j--);
+        if (j === 0) {
+            isDeleting = false;
+            i = (i + 1) % roles.length;
+        }
     }
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
 }
 
-document.querySelector("header p").innerHTML = "";
-type();
+typeEffect();
+
